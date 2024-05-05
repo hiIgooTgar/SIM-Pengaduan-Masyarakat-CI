@@ -1,0 +1,132 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--color-first: #0fb8e3;
+	--color-second: #0849b1;
+	--primary: #0d7dc9;
+}
+
+.modal::-webkit-scrollbar {
+	display: none;
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 2000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #0d7ec957;
+	backdrop-filter: blur(5px);
+	transition: 0.5s linear;
+}
+
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: 10% auto;
+	padding: 20px 20px 4rem;
+	border: 3px double #f5f5f5;
+	width: 80%;
+	border-radius: 10px;
+	animation: zoomIn 0.3s ease-in-out;
+	box-shadow: 0 2px 4px #d7d7d7, 0 2px 1px #d7d7d7;
+}
+
+@keyframes zoomIn {
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	to {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.modal-content .foto {
+	margin: 0.2rem auto 0.7rem;
+}
+
+.modal-content .foto img {
+	margin: auto;
+	width: 180px;
+	height: 180px;
+	border-radius: 10px;
+	border: 3px solid #fff;
+	box-shadow: 0 2px 5px #dddddd, 0 2px 5px #dddddd, 0 2px 1px #dddddd;
+	object-fit: cover;
+	object-position: center;
+}
+
+.modal-content .nama-popup {
+	text-align: center;
+	font-weight: 600;
+	margin: 0.5rem 0 0.3rem;
+}
+
+.modal-content .nik {
+	color: #777777;
+	font-size: 0.7rem;
+	text-align: center;
+	margin-bottom: 1rem;
+}
+
+/* The Close Button */
+.close {
+	color: var(--primary);
+	display: flex;
+	justify-content: end;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* biodata csss */
+.biodata .col-biodata {
+	margin-bottom: 0.3rem;
+}
+
+.biodata label {
+	font-size: 0.7rem;
+	font-weight: 600;
+	margin-bottom: 1px;
+}
+
+.biodata p {
+	font-size: 0.9rem;
+}
+
+/* footer pop up*/
+.f-popup {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background: var(--primary);
+	padding: 0.5rem 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	color: #fff;
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 0;
+}

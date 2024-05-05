@@ -1,0 +1,104 @@
+/*===============================
+         Karawang Kab
+================================*/
+
+.topleft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+}
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: -5px;
+	width: 100%;
+	text-align: center;
+	z-index: 4;
+}
+
+.loader {
+	margin: 0 auto;
+	display: none;
+	border: 25px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 25px solid blue;
+	border-right: 25px solid green;
+	border-bottom: 25px solid red;
+	border-left: 25px solid pink;
+	width: 120px;
+	height: 120px;
+	-webkit-animation: spin 2s linear infinite;
+	animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.akumulasi {
+	font-size: 24px;
+}
+
+.akumulasi-besar {
+	font-size: 28px;
+}
+
+.akumulasi-kecil {
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 575.98px) {
+	.video-bg-content-wrap .video-bg-txt img {
+		height: 100px;
+	}
+
+	.table-responsive {
+		font-size: 12px;
+	}
+
+	.judul {
+		font-size: 14px;
+	}
+
+	.akumulasi {
+		font-size: 16px;
+	}
+
+	.akumulasi-besar {
+		font-size: 18px;
+	}
+
+	.akumulasi-kecil {
+		font-size: 14px;
+	}
+
+
+}

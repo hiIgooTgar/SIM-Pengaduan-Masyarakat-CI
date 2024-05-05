@@ -1,0 +1,420 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--color-first: #0d9488;
+	--color-first-hover: #0e7d74;
+	--color-second: #ffd200;
+	--color-primary: #0d9ed7;
+}
+/* ============================================================== */
+
+.hero-section {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.hero-section img {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	z-index: -1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	object-fit: cover;
+	object-position: center;
+}
+
+.hero-section .content-hero {
+	margin-left: 8%;
+	width: 50%;
+}
+
+.hero-section .content-hero h1 {
+	font-size: 2.5rem;
+	font-weight: 700;
+	color: #fff;
+}
+
+.hero-section .content-hero .colors {
+	color: var(--color-second);
+}
+
+@media (max-width: 768px) {
+	.hero-section .content-hero {
+		width: 80%;
+	}
+
+	.hero-section .content-hero h1 {
+		font-size: 2.1rem;
+	}
+}
+
+@media (max-width: 576px) {
+	.hero-section .content-hero {
+		width: 100%;
+		margin-left: 0;
+		padding: 0 8%;
+	}
+
+	.hero-section .content-hero h1 {
+		font-size: 1.7rem;
+		text-align: center;
+	}
+}
+
+/* === row-first-in-hero === */
+.row-first-in-hero {
+	background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1));
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 2rem;
+	padding: 4rem 3%;
+	width: 100%;
+}
+
+.row-first-in-hero .box-first-in-hero {
+	width: calc(100% / 3 - 2rem);
+	display: grid;
+	grid-template-columns: 30% 65%;
+	gap: 2rem;
+	padding: 1.5rem;
+}
+
+.row-first-in-hero .box-first-in-hero img {
+	width: 80%;
+	margin: auto;
+}
+
+.row-first-in-hero .box-first-in-hero p {
+	color: #fff;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+}
+
+.row-first-in-hero .box-first-in-hero p span {
+	color: var(--color-first);
+	font-weight: 700;
+}
+
+@media (max-width: 768px) {
+	.row-first-in-hero .box-first-in-hero {
+		width: calc(50% - 2rem);
+	}
+}
+
+@media (max-width: 576px) {
+	.row-first-in-hero .box-first-in-hero {
+		width: 100%;
+	}
+}
+
+/* =========== section misi / section second ============= */
+.misi {
+	padding: 4rem 8%;
+	background: #fff;
+}
+
+.misi .title {
+	text-align: center;
+	margin: 0 0 2rem;
+}
+
+.misi .title h2 {
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: var(--color-first);
+	margin-bottom: 0.7rem;
+}
+
+.misi .title h3 {
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #444444;
+}
+
+.misi .row-misi {
+	margin: 3rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2.5rem;
+}
+
+.misi .row-misi .box-misi {
+	width: calc(100% / 3 - 2.5rem);
+}
+
+.misi .row-misi .box-misi img {
+	padding: 0.5rem;
+	object-fit: contain;
+	object-position: center;
+	height: 320px;
+	width: 100%;
+}
+
+@media (max-width: 912px) {
+	.misi .row-misi .box-misi {
+		width: calc(50% - 2.5rem);
+	}
+}
+
+@media (max-width: 576px) {
+	.misi .row-misi .box-misi {
+		width: 100%;
+	}
+}
+
+.misi .row-misi .box-misi h4 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #444444;
+}
+
+.misi .deskripsi-misi p {
+	font-size: 0.95rem;
+	text-align: justify;
+	color: #666666;
+}
+
+.misi .btn-readmore {
+	background: var(--color-first);
+	padding: 0.6rem 1.3rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	margin: 2rem auto 0.7rem;
+	font-size: 0.9rem;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.misi .btn-readmore:hover {
+	background: var(--color-first-hover);
+}
+
+.misi .btn-readmore:active {
+	transform: scale(0.98);
+}
+
+/* ============= section third ============ */
+.section-third-home {
+	padding: 4rem 8%;
+	background: linear-gradient(
+			rgba(255, 255, 255, 0.8),
+			rgba(255, 255, 255, 0.8)
+		),
+		url(https://abahtani.com/wp-content/uploads/2019/04/Panen-Ikan-NIla.jpg);
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.section-third-home .title h2 {
+	text-align: center;
+	font-size: 2.2rem;
+	font-weight: 700;
+	color: var(--color-first);
+}
+
+.section-third-home .row-section-third-home {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2rem;
+	margin: 5rem 0;
+}
+
+.section-third-home .row-section-third-home .box-section-third-home {
+	width: calc(100% / 3 - 2rem);
+	background: #ffffff;
+	box-shadow: 0 1px 4px #cccccc, 0 2px 3px #d0d0d0, 0 2px 5px #d7d7d7;
+	padding: 2rem 2rem 3rem;
+	border-radius: 40px;
+}
+
+@media (max-width: 912px) {
+	.section-third-home .row-section-third-home .box-section-third-home {
+		width: calc(50% - 2rem);
+	}
+}
+
+@media (max-width: 576px) {
+	.section-third-home .row-section-third-home .box-section-third-home {
+		width: 100%;
+	}
+}
+
+.section-third-home .row-section-third-home .box-section-third-home .image-top {
+	display: flex;
+	align-items: center;
+	margin: auto;
+	padding: 1rem;
+	height: 170px;
+	background: var(--color-second);
+	border-radius: 15px;
+	margin-bottom: 1rem;
+	width: 70%;
+}
+
+.section-third-home
+	.row-section-third-home
+	.box-section-third-home
+	.image-top
+	img {
+	object-position: center;
+	width: 100%;
+}
+
+.section-third-home .row-section-third-home .box-section-third-home h3 {
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 600;
+	color: var(--color-first);
+	margin-top: 0.3rem;
+	margin-bottom: 1rem;
+}
+
+.section-third-home .row-section-third-home .box-section-third-home h4 {
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #222222;
+}
+
+.section-third-home .row-section-third-home .box-section-third-home h4 span {
+	color: #111111;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+.section-third-home .row-section-third-home .box-section-third-home p {
+	color: #666666;
+	margin-top: 1rem;
+	font-size: 0.85rem;
+	/* text-align: justify; */
+}
+
+/* =================== section fourth ==================== */
+.section-fourth-home {
+	background: #f0f0f0;
+}
+
+.section-fourth-home .title {
+	text-align: center;
+	padding: 4rem 8% 2rem;
+}
+
+.section-fourth-home .title h2 {
+	font-size: 1.7rem;
+	font-weight: 600;
+	color: var(--color-first);
+	margin-bottom: 0.5rem;
+}
+
+.section-fourth-home .title h3 {
+	font-size: 1.6rem;
+	font-weight: 500;
+}
+
+.section-fourth-home .btn-lowongan {
+	background: var(--color-first);
+	padding: 0.6rem 1.3rem;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	margin: 0.5rem auto 0;
+	font-size: 0.9rem;
+	font-weight: 500;
+	text-align: center;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.section-fourth-home .btn-lowongan:hover {
+	background: var(--color-first-hover);
+}
+
+.section-fourth-home .btn-lowongan:active {
+	transform: scale(0.98);
+}
+
+/* ==== swiper section-fourth-home ==== */
+.swiper-section-fourth-home {
+	padding: 4rem 3%;
+	overflow: hidden;
+	width: 100%;
+}
+
+.swiper-section-fourth-home .box-swiper .swiper-slide {
+	margin: 0.1rem 0;
+	text-align: center;
+	font-size: 18px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 0 1rem;
+	flex-direction: column;
+	position: relative;
+}
+
+.swiper-section-fourth-home .box-swiper .swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	box-shadow: 0 3px 5px #cccccc, 0 3px 3px #dddddd, 0 3px 5px #eeeeee;
+	object-fit: cover;
+	object-position: center;
+	background-size: cover;
+	border-radius: 15px;
+}
+
+/* === Swiper pagination === */
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 4px;
+	background-color: #007bff;
+	border-radius: 0;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--color-first);
+}

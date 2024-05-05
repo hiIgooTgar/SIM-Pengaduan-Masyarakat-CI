@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--color-first: #1888c0;
+	--color-second: #075985;
+	--primary: #0284c7;
+}
+
+#tableMobileAdmin {
+	width: 100%;
+}
+
+.dataTables_wrapper select,
+.dataTables_wrapper .dataTables_filter input {
+	color: #4a5568;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-top: 0.4rem;
+	padding-bottom: 0.4rem;
+	line-height: 1.25;
+	border-width: 2px;
+	border-radius: 0.25rem;
+	border-color: var(--primary);
+	background-color: #c0d2d1bd;
+	outline: none;
+}
+
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+	background-color: var(--color-second);
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+	font-weight: 600;
+	border-radius: 0.25rem;
+	border: 1px solid transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+	color: #fff !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	font-weight: 600;
+	border-radius: 0.25rem;
+	background: var(--primary) !important;
+	border: 1px solid transparent;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+	color: #fff !important;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	font-weight: 600;
+	border-radius: 0.25rem;
+	background: var(--primary) !important;
+	border: 1px solid transparent;
+}
+
+table.dataTable.no-footer {
+	border-bottom: 1px solid #e2e8f0;
+	margin-top: 0.75em;
+	margin-bottom: 0.75em;
+}
+
+table.dataTable.dtr-inline.collapsed > tbody > tr > td:first-child:before,
+table.dataTable.dtr-inline.collapsed > tbody > tr > th:first-child:before {
+	background-color: var(--primary) !important;
+}

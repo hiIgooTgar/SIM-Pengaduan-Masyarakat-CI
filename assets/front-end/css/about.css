@@ -1,0 +1,317 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--color-first: #0d9488;
+	--color-first-hover: #0e7d74;
+	--color-second: #ffd200;
+	--color-primary: #0d9ed7;
+}
+
+/* ================================ */
+
+/* ====== section-first-about ======= */
+.section-first-about {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(13, 148, 137, 0.597)),
+		url(https://bicaraindonesia.id/wp-content/uploads/2022/02/DSC_0027-e1645615822494.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.section-first-about .content-main-about {
+	width: 50%;
+	margin-left: 8%;
+}
+
+.section-first-about .content-main-about h1 {
+	font-size: 2.5rem;
+	color: #fff;
+	font-weight: 700;
+}
+
+.front-animasi {
+	position: absolute;
+	left: 0;
+	bottom: -5rem;
+}
+
+@media (max-width: 768px) {
+	.section-first-about .content-main-about h1 {
+		font-size: 2.1rem;
+	}
+
+	.section-first-about .content-main-about {
+		width: 80%;
+	}
+}
+
+@media (max-width: 576px) {
+	.section-first-about .content-main-about h1 {
+		font-size: 1.7rem;
+		text-align: center;
+	}
+
+	.section-first-about .content-main-about {
+		width: 100%;
+		margin-left: 0;
+		padding: 0 8%;
+	}
+}
+
+/* ============ section-second-about =========== */
+
+.section-second-about {
+	padding: 8rem 12%;
+}
+
+.section-second-about .row-section-second-about .box-section-second-about {
+	margin-bottom: 3rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(odd) {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(odd)
+	.content {
+	text-align: right;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(odd)
+	.content
+	h4 {
+	color: var(--color-first);
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(odd)
+	.content
+	p {
+	color: #666666;
+	font-size: 0.9rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(odd)
+	img {
+	width: 400px;
+	object-position: center;
+	object-fit: contain;
+	margin: auto;
+}
+
+/* ==== genap ===== */
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(even) {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	gap: 2rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(even)
+	.content {
+	text-align: left;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(even)
+	.content
+	h4 {
+	color: var(--color-first);
+	font-size: 1.3rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(even)
+	.content
+	p {
+	color: #666666;
+	font-size: 0.9rem;
+}
+
+.section-second-about
+	.row-section-second-about
+	.box-section-second-about:nth-child(even)
+	img {
+	width: 400px;
+	object-position: center;
+	object-fit: contain;
+	margin: auto;
+}
+
+@media (max-width: 912px) {
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(odd)
+		img {
+		width: 220px;
+	}
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(even)
+		img {
+		width: 220px;
+	}
+}
+
+@media (max-width: 768px) {
+	.section-second-about .row-section-second-about .box-section-second-about {
+		margin-bottom: 6rem;
+	}
+
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(even) {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(odd) {
+		flex-wrap: wrap;
+		flex-direction: column-reverse;
+		gap: 1rem;
+	}
+
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(odd)
+		.content {
+		text-align: left;
+	}
+
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(even)
+		img {
+		width: 100%;
+	}
+
+	.section-second-about
+		.row-section-second-about
+		.box-section-second-about:nth-child(odd)
+		img {
+		width: 100%;
+	}
+}
+
+@media (max-width: 576px) {
+	.section-second-about .row-section-second-about .box-section-second-about {
+		margin-bottom: 5rem;
+	}
+}
+
+.deskripsi-second-about {
+	padding: 2rem 0 0;
+}
+
+.deskripsi-second-about p {
+	font-size: 0.85rem;
+	color: #666666;
+}
+
+.deskripsi-second-about h4 {
+	text-align: center;
+	margin: 2rem 0 0;
+	font-weight: 600;
+	font-size: 1.2rem;
+	color: var(--color-first);
+}
+
+/* =============== section-third-about ================== */
+
+.section-third-about {
+	padding: 4rem 8%;
+	background: var(--color-second);
+}
+
+.section-third-about .title h2 {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+}
+
+.section-third-about .row-section-third-about {
+	padding: 5rem 8%;
+}
+
+.section-third-about .row-section-third-about .box-section-third-about {
+	display: grid;
+	gap: 1.5rem;
+	grid-template-columns: 14% 30% 50%;
+	align-items: center;
+	padding-bottom: 3rem;
+	position: relative;
+}
+
+.section-third-about
+	.row-section-third-about
+	.box-section-third-about:last-child {
+	padding-bottom: 0;
+}
+
+.section-third-about .row-section-third-about .box-section-third-about #tahun {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.section-third-about
+	.row-section-third-about
+	.box-section-third-about
+	#tahun
+	i {
+	margin-right: 0.4rem;
+}
+
+.section-third-about .row-section-third-about .box-section-third-about img {
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+	box-shadow: 0 2px 4px #666666, 0 1px 2px #777777, 0 2px 3px #aaaaaa;
+}
+
+.section-third-about
+	.row-section-third-about
+	.box-section-third-about
+	.deskripsi {
+	font-size: 0.9rem;
+}
+
+@media (max-width: 912px) {
+	.section-third-about .row-section-third-about .box-section-third-about {
+		grid-template-columns: 1fr;
+	}
+}

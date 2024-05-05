@@ -1,0 +1,229 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--primary-a: #0ea5e9;
+	--primary-color: #0284c7;
+	--primary-tengah-color: #0369a1;
+	--hover-primary-color: #075985;
+	--color-first: #0284c7;
+	--color-second: #0369a1;
+}
+
+*:focus {
+	outline: var(--color-first);
+}
+
+.title-register {
+	font-weight: 600;
+	margin-bottom: 3rem;
+	font-size: 2rem;
+}
+
+.title-register h3 {
+	margin-bottom: 0;
+}
+
+.title-register h2 {
+	margin-bottom: 0;
+	font-weight: 700;
+	color: var(--color-first);
+}
+
+@media (max-width: 576px) {
+	.title-register {
+		font-size: 1.7rem;
+		margin-bottom: 3rem;
+	}
+}
+
+.alert-register {
+	padding: 0.5rem 0.8rem;
+	width: 100%;
+	font-size: 0.8rem;
+	margin: 0.7rem 0 1rem;
+	background: rgba(0, 255, 38, 0.3);
+}
+
+/* ==== langkah2 register */
+form {
+	padding: 2rem 10%;
+}
+
+.row-register {
+	display: grid;
+	grid-template-columns: 50% 45%;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+	width: 100%;
+	height: 100vh;
+}
+
+.form_register-isi label {
+	font-weight: 400;
+	font-size: 0.7rem;
+	color: #fff;
+	padding: 0.18em 0.5rem;
+	background: linear-gradient(45deg, var(--primary-color), var(--color-second));
+	border-radius: 4px;
+}
+
+/* ==== inputan ==== */
+.form-control-register::placeholder {
+	font-size: 0.75rem;
+	letter-spacing: 1.5px;
+	color: #bbb;
+}
+
+.form-control-register {
+	width: 100%;
+	display: inline-block;
+	padding: 0.4rem 0.8rem;
+	margin-top: 5px;
+	margin-bottom: 1rem;
+	border: 1.8px solid #ccc;
+	outline: none;
+	font-size: 0.82rem;
+	border-radius: 4px;
+	color: #444444;
+}
+
+.form-control-register:focus {
+	border: 1.8px solid var(--color-first);
+}
+
+textarea::placeholder {
+	font-size: 0.8rem;
+	letter-spacing: 1.5px;
+	color: #bbb;
+}
+
+textarea {
+	width: 100%;
+	padding: 0.4rem 0.8rem;
+	margin-top: 5px;
+	margin-bottom: 1.5rem;
+	font-size: 0.8rem;
+	border-bottom: 2px solid #ccc;
+	border: 1.8px solid #ccc;
+	height: 100px;
+	border-radius: 4px;
+}
+
+textarea:focus {
+	border: 1.8px solid var(--color-first);
+}
+
+/* ==== btn ==== */
+.btn-register-row {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 1.5rem;
+}
+
+.btn-register {
+	cursor: pointer;
+	margin-top: 0.5rem;
+	background: var(--primary-color);
+	color: #fff;
+	border: none;
+	padding: 0.5rem 0.8rem;
+	letter-spacing: 2px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	position: relative;
+	z-index: 1;
+	margin-bottom: 1rem;
+	font-size: 0.9rem;
+}
+
+.btn-register::after {
+	width: 100%;
+	height: 0;
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	content: "";
+	background: var(--color-second);
+	z-index: -1;
+	transition: 170ms linear;
+}
+
+.btn-register:hover::after {
+	height: 100%;
+}
+
+.btn-register:active {
+	outline: none;
+}
+/* ===== */
+
+.form_login-text {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+.form_login-text p {
+	font-size: 0.9rem;
+}
+
+.form_login-text a {
+	color: var(--color-first);
+	font-weight: 500;
+}
+
+.form_login-text a:hover {
+	text-decoration: none;
+	color: var(--color-second);
+}
+
+/* container-logo */
+.container-logo {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+.container-logo .swiperGambar .swiper-slide {
+	margin: auto;
+	display: flex;
+	justify-content: center;
+}
+
+.container-logo .swiperGambar .swiper-slide img {
+	width: 80%;
+}
+
+/*  */
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 30px;
+}
+
+.swiper-pagination-bullet {
+	width: 15px;
+	height: 4px;
+	background-color: #007bff;
+	border-radius: 0;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: var(--color-first);
+}

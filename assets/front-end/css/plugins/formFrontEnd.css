@@ -1,0 +1,95 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+*:focus {
+	outline: none;
+}
+
+*::selection {
+	background: var(--primary);
+}
+
+:root {
+	--color-first: #0fb8e3;
+	--color-second: #0849b1;
+	--primary: #0d7dc9;
+}
+
+/* disable */
+
+.form-frontEnd:disabled {
+	cursor: not-allowed;
+}
+
+.form-frontEnd:disabled + .label-icon::before {
+	content: "\26D4"; /* Unicode character for the warning sign */
+	font-size: 0.9rem;
+	color: red;
+	margin-right: 5px;
+}
+/* label */
+.label-frontEnd {
+	margin-top: 14px;
+	margin-bottom: 8px;
+	font-size: 0.9rem;
+	letter-spacing: 0.2px;
+}
+
+/* inputan, textarea */
+.form-frontEnd {
+	display: block;
+	border: 1.5px solid #bfc1c4;
+	border-radius: 6px;
+	width: 100%;
+	padding: 0.375rem 0.75rem;
+	font-size: 0.9rem;
+	line-height: 1.5;
+	color: #495057;
+	background-color: #fff;
+	background-clip: padding-box;
+	transition: 0.15s ease-in-out;
+}
+
+.form-frontEnd:focus {
+	color: #495057;
+	background-color: #fff;
+	border-color: var(--primary);
+	outline: none;
+	box-shadow: 0 0 0 1px rgba(0, 123, 255, 0.203);
+}
+
+.form-frontEnd::-ms-expand {
+	background-color: transparent;
+	border: 0;
+}
+.form-frontEnd::placeholder {
+	color: #6c757d;
+	opacity: 1;
+}
+
+.form-frontEnd:disabled {
+	background-color: #4294cb31;
+	border-color: #b9bdc0;
+}
+
+.form-frontEnd[readonly] {
+	background-color: #4294cb31;
+	opacity: 1;
+}
+
+/* select option */
+.form-frontEnd option {
+	background: #f7f7f7;
+	font-size: 0.9rem;
+	cursor: pointer;
+	padding: 2px 0.3rem;
+}
+
+.form-frontEnd option:hover {
+	background: #f4f4f4;
+}

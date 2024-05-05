@@ -1,0 +1,166 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Poppins", sans-serif;
+}
+
+:root {
+	--color-first: #0d9488;
+	--color-first-hover: #0e7d74;
+	--color-second: #ffd200;
+	--color-primary: #0d9ed7;
+}
+
+/* ================================ */
+
+/* ====== section-first-contact ======= */
+.section-first-contact {
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(13, 148, 137, 0.597)),
+		url(https://asset-2.tstatic.net/aceh/foto/bank/images/keramba-ikan-di-aceh-utara_ikan-air-tawar.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.section-first-contact .content-main-contact {
+	width: 50%;
+	margin-left: 8%;
+}
+
+.section-first-contact .content-main-contact h1 {
+	font-size: 2.5rem;
+	color: #fff;
+	font-weight: 700;
+}
+
+.section-first-contact .content-main-contact h1 span {
+	color: var(--color-second);
+	font-size: 2.8rem;
+}
+
+@media (max-width: 768px) {
+	.section-first-contact .content-main-contact h1 {
+		font-size: 2.1rem;
+	}
+
+	.section-first-contact .content-main-contact h1 span {
+		font-size: 2.3rem;
+	}
+
+	.section-first-contact .content-main-contact {
+		width: 80%;
+	}
+}
+
+@media (max-width: 576px) {
+	.section-first-contact .content-main-contact h1 {
+		font-size: 1.7rem;
+		text-align: center;
+	}
+
+	.section-first-contact .content-main-contact h1 span {
+		font-size: 2rem;
+		text-align: center;
+	}
+
+	.section-first-contact .content-main-contact {
+		width: 100%;
+		margin-left: 0;
+		padding: 0 8%;
+	}
+}
+
+/* ===== section-second-contact ==== */
+.section-second-contact {
+	padding: 8rem 8%;
+}
+
+.row-section-second-contact .box-d-perusahaan .title-perusahaan {
+	font-size: 1.3rem;
+	font-weight: 600;
+	color: var(--color-first);
+	margin-bottom: 0.8rem;
+}
+
+.row-section-second-contact .box-d-perusahaan .brand-contact {
+	font-size: 0.8rem;
+	font-weight: 400;
+	margin-bottom: 0.3rem;
+}
+
+.row-section-second-contact .box-d-perusahaan .deskripsi {
+	font-size: 0.9rem;
+	font-weight: 400;
+}
+
+.line-box-d {
+	display: block;
+	content: "";
+	width: 60%;
+	height: 6px;
+	background: var(--color-second);
+	margin-top: 1rem;
+}
+
+/* form contact */
+
+.form-frontEnd-a::placeholder,
+.form-frontEnd-a-textarea::placeholder {
+	font-size: 0.9rem;
+}
+
+.form-frontEnd-a {
+	outline: none;
+	padding: 0.8rem 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid #eeeeee;
+	box-shadow: 0 1px 2px #dddddd;
+	width: 100%;
+	font-size: 0.9rem;
+}
+
+.form-frontEnd-a:focus {
+	box-shadow: 0 1px 2.2px #cccccc, 0 1px 2.4px #cdcdcd, 0 1px 2.5px #cfcfcf;
+}
+
+.form-frontEnd-a-textarea {
+	outline: none;
+	padding: 0.8rem 1rem;
+	margin-bottom: 1rem;
+	border: 1px solid #eeeeee;
+	box-shadow: 0 1px 2px #dddddd;
+	width: 100%;
+	height: 140px;
+	font-size: 0.9rem;
+}
+
+.form-frontEnd-a-textarea:focus {
+	box-shadow: 0 1px 2.2px #cccccc, 0 1px 2.4px #cdcdcd, 0 1px 2.5px #cfcfcf;
+}
+
+.btn-s-contact {
+	padding: 0.5rem 1rem;
+	background: transparent;
+	color: var(--color-first);
+	border: 1.5px solid var(--color-first);
+	font-size: 0.85rem;
+	transition: 200ms linear;
+}
+
+.btn-s-contact:hover {
+	background: var(--color-first);
+	color: #fff;
+	outline-offset: 2px;
+	outline: 1px solid var(--color-first);
+}
+
+.btn-s-contact:active {
+	transform: scale(0.95);
+}

@@ -1,0 +1,19 @@
+{
+    "font awesome 6 brands": {
+        "normal": "font_awesome_6_brands_normal_bc8518f7c6662215315a70391938c4d3"
+    },
+    "font awesome 6 free": {
+        "normal": "C:\\xampp1\\htdocs\\sim_pengaduan\\application\\libraries\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_6_free_normal_d9435ad7ce4df537429f0606dde66581",
+        "900": "font_awesome_6_free_900_9810b9aabbb757fed6ada4f8b7ae680d"
+    },
+    "font awesome 5 brands": {
+        "normal": "font_awesome_5_brands_normal_bc8518f7c6662215315a70391938c4d3"
+    },
+    "font awesome 5 free": {
+        "900": "C:\\xampp1\\htdocs\\sim_pengaduan\\application\\libraries\\dompdf\\vendor\\dompdf\\dompdf\/lib\/fonts\/font_awesome_5_free_900_9810b9aabbb757fed6ada4f8b7ae680d",
+        "normal": "font_awesome_5_free_normal_d9435ad7ce4df537429f0606dde66581"
+    },
+    "fontawesome": {
+        "normal": "fontawesome_normal_a07c54af815ea54af1b5e5aa13cc5f8b"
+    }
+}
