@@ -1,3 +1,3 @@
-# app_simpel
+# App Pengaduan Masyarakat
 
-Aplikasi Pencatatan Agenda Kegiatan dan Buku Tamu
+Aplikasi Pengaduan Masyarakat
